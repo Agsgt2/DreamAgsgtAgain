@@ -187,3 +187,40 @@ Make it move by using
 new3D.obj("20").move(20, 50)
 ```
 There are too many functions ._.
+## Types
+DreamAgsgt also uses types like in TypeScript. The default is any.
+```ts
+i sum(a: number, b){return a+b}
+```
+### all
+In TypeScript, you can choose `any` or `unknown` for an type which is something else, 
+but in DreamAgsgt, we have the `all` type, which is like `any`, but does not disable type 
+checking.
+```ts
+func doSomething(a: all){
+  // Do something...
+}
+
+// All OK
+doSomething(25)
+doSomething(new Date())
+doSomething({})
+```
+### none
+Instead of using the `undefined` or `null` types for useless inputs, you can use the `none` type!
+```ts
+func doSomething(a: none){
+  // Can't do anything with a, so i won't
+}
+
+// OK
+doSomething()
+
+doSomething("Hello, World!") // Error: Type "string" is not assignable to type "none"
+```
+### Automatic `Promise<>` Type
+You now don't need to use the annoying `Promise<>` type anymore! Just type an async function
+with an return type and you are done!
+```ts
+asy func fetchSomething(): number { ... } // OK
+```
