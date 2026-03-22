@@ -1,12 +1,12 @@
 # DreamAgsgt
-DreamAgsgt is a version of Dreamberd which is owned by the Agsgt Foundation, here are some scripts for the language, also this is fake so im trying to make the functions (demo only bcz idk how to make complex functions). <br>
+DreamAgsgt is a version of Dreamberd which is owned by the Agsgt Foundation, here are some scripts for the language, also this is fake. Actually.<br>
 The text marked with a "*" is a copy or a same script of the Dreamberd language<br>
 
 ## If
 If is a function which if its input is true, the then output is true, if not, the script excecutes the scripts after the if script, or if it has a *else* counterpart, it runs it <br>
-```java
+```js
 if <score = 5> {
-  var score = score - 5
+  score = score - 5
 }
 ```
 
@@ -21,23 +21,23 @@ We is a statement randomness, it is complex and may have a table for it, here it
 |T|T|T  |
 
 And i cant froget about the example!
-```java
+```js
 print(We(True, False)) //True
 ```
 
 ## Lifetimes*
 Lifetimes are a toggler that makes a duration for scripts, they can be positive by lines or seconds by the example below
-```java
+```js
 print<2l>("I last for 2 lines!") //I last for 2 lines!
 print<10s>("I last for 10 seconds!") //I last for 10 seconds!
 ```
 Or they can be negative
-```java
+```js
 var text = "I may last after my creation..."
 print<-1l>(text) //I may last after my creation...
 ```
 
-## We're
+## Were
 We're is a copy of **We**, with the difference that it is more advanced than We and has more inputs and outputs.
 
 |A|B|C|Out|Qwery|
@@ -51,13 +51,13 @@ We're is a copy of **We**, with the difference that it is more advanced than We 
 |F|F|T|F  |F>T  |
 |T|T|T|T  |F<T  |
 
-```java
-print(We're(T,T,T)) //[True, Qwery: False < True]
+```js
+print(Were(T,T,T)) //[True, Qwery: False < True]
 ```
 
 ## Function*
 Makes a function with every letter of the word function (only if they are in order)
-```java
+```js
 function (add(a,b)) {return a + b}
 funti (sub(a,b)) {return a - b}
 i (mult(a,b)) {return a * b}
@@ -72,47 +72,118 @@ More complex text, used for links and stuff
 
 ## HTJS*
 HTJS is a script that turns from JavaScript into HTML
-```java
+```js
 HTJS.run{
-<h1>HTJS script</h1>
+  <h1>HTJS script</h1>
 }
 ```
 It has a lot of variants:
-```java
+```js
 print(HTJS.htmltotext(
-<h2>What am i doing here?!?</h2>
+  <h2>What am i doing here?!?</h2>
 )) //What am i doing here?!?
 
 HTJS.functionHTJS <hn "size"=1-6> {
-<HTJS.headersize (size)>
+  <HTJS.headersize (size)>
 }
 ```
 
 ## Youtube
-Uses youtube search query to play on a window
-```java
+Uses Youtube search query to play on a window
+```js
 Youtube.play(Youtube.search("Reaction Reaction"))
 ```
 ### Youtube: Extras
-You can even use Youtube search query to search in your browser! Spoiler: it has another command comming up next!
-```java
-let searchYT = Youtube.search("@AngelThe4th")
+You can even use Youtube search query to search in your browser!
+```js
+let searchYT = Youtube.search("@ATFLURE")
 Browser.search(searchYT)
 ```
+### Youtube: New for 2026!
+You can now search videos by creator!
+```js
+let searchYT = Youtube.search("", "@ATFLURE")
+```
 
-## DreamlyBerd
+## DreamlyBerd*
 An giant extension with most of DreamBerd commmands!<br>
 Import:
-```java
-import ("DreamlyBerd")
+```js
+from "DreamlyBerd" import * as DreamlyBerd
 ```
 Note: it has a premium version and you can buy it like this:
-```java
+```js
 DreamlyBerd.PremiumBuy()
 ```
 it enables all of the DreamBerd commands!
 
-##
+## Loops
+Unlike DreamBerd, DreamAgsgt has various loops.
+### For
+To create an For loop, you must use `four`
+```js
+four (let i = 0; i <= 10; 1++){
+  print(i)
+}
+```
+You can also create an `four (... of ...)` loop
+```js
+four (let i of [1, 2, 3, 4]){
+  print(i)
+}
+```
+### While
+To create an While loop, you must use `wail`
+```js
+wail(score > 5){
+  score++
+}
+```
+You can also do an `do { ... } wail` loop
+```js
+do {
+  score = 5
+} wail (score > 5)
+```
+## Databases
+Now we have databases on the cloud!
+```js
+// @filename: index1.da
+database.add("name", "value")
 
-## Comming soon....
-Some new scripts are comming soon, make sure to watch this project! (2/7)
+// @filename: index2.da
+print(database.get("name")) // value
+```
+You could also fetch some value when a name gets added
+```js
+print(database.fetch("name"))
+```
+You can remove or replace values on the database
+```js
+database.replace("name", new Date())
+
+database.remove("name")
+```
+You can also define your own public database!
+```js
+let database1 = new DataBase("publichost:2763")
+database1.add("name")
+```
+WARNING: You can also add readonly values, just, use them for experimental purpouses.
+```js
+database.add("pi", 3.14159, true)
+```
+## Angel3D
+You can create an new 3D game instance using
+```js
+let new3D = new Angel3D()
+```
+Add an object using
+```js
+new3D.add(Angel3D.type.Object, "20")
+```
+Make it move by using
+```js
+new3D.obj("20").move(20, 50)
+```
+There are too many functions ._.
