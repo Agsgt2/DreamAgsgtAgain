@@ -63,6 +63,13 @@ funti (sub(a,b)) {return a - b}
 i (mult(a,b)) {return a * b}
 funi (div(a,b,)) {return a / b}
 ```
+### Async Functions
+Same with function, it does not matter the letters, the order is what matters.
+```js
+async function f0(){ ... }
+a f f1(){ ... }
+anc fnc f2(){ ... }
+```
 
 ## Rich text*
 More complex text, used for links and stuff
