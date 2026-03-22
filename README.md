@@ -1,9 +1,9 @@
 # DreamAgsgt
-DreamAgsgt is a version of Dreamberd which is owned by the Agsgt Foundation, here are some scripts for the language, also this is fake. Actually.<br>
-The text marked with a "*" is a copy or a same script of the Dreamberd language<br>
+DreamAgsgt is a ~~version of Dreamberd~~ programming language which is owned by the Agsgt Foundation, here are some scripts for the language, also this is fake. Actually.<br>
+The text marked with a "*" is a copy or a same script of the DreamBerd language<br>
 
 ## If
-If is a function which if its input is true, the then output is true, if not, the script excecutes the scripts after the if script, or if it has a *else* counterpart, it runs it <br>
+If is a function which if its input is true, the then output is true, if not, the script excecutes the scripts after the if script, or if it has a `else` counterpart, it runs it <br>
 ```js
 if <score = 5> {
   score = score - 5
@@ -33,12 +33,12 @@ print<10s>("I last for 10 seconds!") //I last for 10 seconds!
 ```
 Or they can be negative
 ```js
-var text = "I may last after my creation..."
-print<-1l>(text) //I may last after my creation...
+print(text) //I may last after my creation...
+var text<-1l> = "I may last after my creation..."
 ```
 
 ## Were
-We're is a copy of **We**, with the difference that it is more advanced than We and has more inputs and outputs.
+Were is a copy of `We`, with the difference that it is more advanced than We and has more inputs and outputs.
 
 |A|B|C|Out|Qwery|
 |-|-|-|---|-----|
@@ -58,10 +58,10 @@ print(Were(T,T,T)) //[True, Qwery: False < True]
 ## Function*
 Makes a function with every letter of the word function (only if they are in order)
 ```js
-function (add(a,b)) {return a + b}
-funti (sub(a,b)) {return a - b}
-i (mult(a,b)) {return a * b}
-funi (div(a,b,)) {return a / b}
+function add(a,b) {return a + b}
+funti sub(a,b) {return a - b}
+i mult(a,b) {return a * b}
+funi div(a,b) {return a / b}
 ```
 ### Async Functions
 Same with function, it does not matter the letters, the order is what matters.
@@ -92,6 +92,19 @@ print(HTJS.htmltotext(
 
 HTJS.functionHTJS <hn "size"=1-6> {
   <HTJS.headersize (size)>
+}
+```
+### New for 2026!
+You are free to freely use the `for` argument since DreamAgsgt uses `four`, not `for`.
+```js
+HTJS.run{
+  <label for="hello">Hello!</label>
+}
+```
+And you must ALWAYS use the `HTJSClass` argument instead of the `class` argument.
+```js
+HTJS.run{
+  <h1 HTJSClass="hello">Hello!</h1>
 }
 ```
 
@@ -230,4 +243,42 @@ You now don't need to use the annoying `Promise<>` type anymore! Just type an as
 with an return type and you are done!
 ```ts
 asy func fetchSomething(): number { ... } // OK
+```
+## Booleans
+There is now `false`, `disapproved`, `neutral`, `approved`, and `true`.
+```js
+const a = approved
+```
+You can now use `==`, `===`, `>`, or `<` to see if an boolean is equal, higher, or lower than
+another boolean!
+```js
+if (true > approved){
+  console.log("Hello, World!")
+}
+```
+## Equals*
+Did i forget there are 4 types of equal?
+### Slightly Equal/`=`
+The slightly equal does not matter if an number has the same decimal places or not.
+```js
+3.141 = 3 // true
+```
+### Equal/`==`
+This checks if an number has atleast 2 decimal numbers equal.
+```js
+3.141 == 3.142 // true
+```
+### Strictly Equal/`===`
+This checks if all of the decimal numbers are equal.
+```js
+111.111 === 111.1111 // false
+```
+### Actually Equal/`====`/`is`
+This checks if all of the decimal numbers AND the memory spot are equal.
+```js
+const pi = 3.141
+pi ==== pi // true
+3.141 is 3.141 // true
+3.142 is 3.141 // false
+pi ==== 3.141 // false
 ```
