@@ -282,3 +282,55 @@ pi ==== pi // true
 3.142 is 3.141 // false
 pi ==== 3.141 // false
 ```
+## Geometry Dash API
+The Geometry Dash API can be imported using
+```js
+from "gdapi" import * as gdapi
+```
+You can search levels by name and ID
+```js
+let level1 = gdapi.search("Trigger Abuse")
+let level2 = gdapi.search(136353284n /* For levels after 1.5, we recommend using bigints.*/)
+```
+This is what the Geometry Dash API returns when searching a level:
+|Data Name|Data Type    |
+|---------|-------------|
+|name     |string       |
+|id       |number/bigint|
+You can also play an level if you have the Geometry Dash API Extension for Geometry Dash.
+```js
+gdapi.play(level1) // Opens Geometry Dash with the ID of the level copied.
+```
+## Variables, Lets, and Consts*
+There are various ways that you can define variables.
+### Temporary/Constant Constant Variables `const const`/`const ... as const`
+To create an temporary variable, you could do
+```ts
+const const temp1 = 123
+const temp2 = 456 as const
+
+temp1 = 789 // Error: Variable "temp1" is a temporary variable
+```
+### Variable Constant Variables `let const`/`var const`/`let ... as const`/`var ... as const`
+Variable Constant Variables are variables that can get edited, but it's children can't
+```ts
+let const vcon1 = 123
+let vcon2 = [4, 5, 6] as const
+
+// OK
+vcon2 = [7, 8, 9] // Does not need as const
+
+vcon2[1] = 10 // Error: Variable "vcon2" is a variable constant variable
+```
+### Constant Variable Variables `const let`/`const var`/`const ... as let`/`const .. as var`
+Constant Variable Variables are the contrary of Variable Constant Variables, the children can 
+get edited, but their parent can't
+```ts
+const let cvar1 = 123
+const cvar2 = [4, 5, 6] as var
+
+// OK
+cvar2[1] = 5.5
+
+cvar2 = [7, 8, 9] // Error: Variable "cvar2" is a constant variable variable
+```
