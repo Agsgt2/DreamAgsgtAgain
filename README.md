@@ -20,13 +20,13 @@ We is a statement randomness, it is complex and may have a table for it, here it
 |T|F|T  |
 |T|T|T  |
 
-And i cant froget about the example!
+And I can't forget about the example!
 ```js
 print(We(True, False)) //True
 ```
 
 ## Lifetimes*
-Lifetimes are a toggler that makes a duration for scripts, they can be positive by lines or seconds by the example below
+Lifetimes are a toggler that makes a duration for scripts; they can be positive by lines or seconds, as shown in the example below
 ```js
 print<2l>("I last for 2 lines!") //I last for 2 lines!
 print<10s>("I last for 10 seconds!") //I last for 10 seconds!
@@ -78,7 +78,7 @@ More complex text, used for links and stuff
 </pre>
 
 ## HTJS*
-HTJS is a script that turns from JavaScript into HTML
+HTJS is a script that turns JavaScript into HTML
 ```js
 HTJS.run{
   <h1>HTJS script</h1>
@@ -87,8 +87,8 @@ HTJS.run{
 It has a lot of variants:
 ```js
 print(HTJS.htmltotext(
-  <h2>What am i doing here?!?</h2>
-)) //What am i doing here?!?
+  <h2>What am I doing here?!?</h2>
+)) //What am I doing here?!?
 
 HTJS.functionHTJS <hn "size"=1-6> {
   <HTJS.headersize (size)>
@@ -109,12 +109,12 @@ HTJS.run{
 ```
 
 ## Youtube
-Uses Youtube search query to play on a window
+Uses a YouTube search query to play on a window
 ```js
 Youtube.play(Youtube.search("Reaction Reaction"))
 ```
 ### Youtube: Extras
-You can even use Youtube search query to search in your browser!
+You can even use a YouTube search query to search in your browser!
 ```js
 let searchYT = Youtube.search("@ATFLURE")
 Browser.search(searchYT)
@@ -126,40 +126,40 @@ let searchYT = Youtube.search("", "@ATFLURE")
 ```
 
 ## DreamlyBerd*
-An giant extension with most of DreamBerd commmands!<br>
+A giant extension with most of DreamBerd commands!<br>
 Import:
 ```js
 from "DreamlyBerd" import * as DreamlyBerd
 ```
-Note: it has a premium version and you can buy it like this:
+Note: it has a premium version, and you can buy it like this:
 ```js
 DreamlyBerd.PremiumBuy()
 ```
-it enables all of the DreamBerd commands!
+It enables all of the DreamBerd commands!
 
 ## Loops
 Unlike DreamBerd, DreamAgsgt has various loops.
 ### For
-To create an For loop, you must use `four`
+To create a for loop, you must use `four`
 ```js
 four (let i = 0; i <= 10; 1++){
   print(i)
 }
 ```
-You can also create an `four (... of ...)` loop
+You can also create a `four (... of ...)` loop
 ```js
 four (let i of [1, 2, 3, 4]){
   print(i)
 }
 ```
 ### While
-To create an While loop, you must use `wail`
+To create a while loop, you must use `wail`
 ```js
 wail(score > 5){
   score++
 }
 ```
-You can also do an `do { ... } wail` loop
+You can also do a `do { ... } wail` loop
 ```js
 do {
   score = 5
@@ -178,7 +178,7 @@ You could also fetch some value when a name gets added
 ```js
 print(database.fetch("name"))
 ```
-You can remove or replace values on the database
+You can remove or replace values in the database
 ```js
 database.replace("name", new Date())
 
@@ -189,12 +189,12 @@ You can also define your own public database!
 let database1 = new DataBase("publichost:2763")
 database1.add("name")
 ```
-WARNING: You can also add readonly values, just, use them for experimental purpouses.
+WARNING: You can also add read-only values and use them for experimental purposes.
 ```js
 database.add("pi", 3.14159, true)
 ```
 ## Angel3D
-You can create an new 3D game instance using
+You can create a new 3D game instance using
 ```js
 let new3D = new Angel3D()
 ```
@@ -213,8 +213,8 @@ DreamAgsgt also uses types like in TypeScript. The default is any.
 i sum(a: number, b){return a+b}
 ```
 ### all
-In TypeScript, you can choose `any` or `unknown` for an type which is something else, 
-but in DreamAgsgt, we have the `all` type, which is like `any`, but does not disable type 
+In TypeScript, you can choose `any` or `unknown` for a type that is something else, 
+But in DreamAgsgt, we have the `all` type, which is like `any`, but does not disable type 
 checking.
 ```ts
 func doSomething(a: all){
@@ -230,7 +230,7 @@ doSomething({})
 Instead of using the `undefined` or `null` types for useless inputs, you can use the `none` type!
 ```ts
 func doSomething(a: none){
-  // Can't do anything with a, so i won't
+  // Can't do anything with a, so I won't
 }
 
 // OK
@@ -239,8 +239,8 @@ doSomething()
 doSomething("Hello, World!") // Error: Type "string" is not assignable to type "none"
 ```
 ### Automatic `Promise<>` Type
-You now don't need to use the annoying `Promise<>` type anymore! Just type an async function
-with an return type and you are done!
+You no longer need to use the annoying `Promise<>` type anymore! Just type an async function
+with a return type, and you are done!
 ```ts
 asy func fetchSomething(): number { ... } // OK
 ```
@@ -249,7 +249,7 @@ There is now `false`, `disapproved`, `neutral`, `approved`, and `true`.
 ```js
 const a = approved
 ```
-You can now use `==`, `===`, `>`, or `<` to see if an boolean is equal, higher, or lower than
+You can now use `==`, `===`, `>`, or `<` to see if a boolean is equal, higher, or lower than
 another boolean!
 ```js
 if (true > approved){
@@ -257,14 +257,14 @@ if (true > approved){
 }
 ```
 ## Equals*
-Did i forget there are 4 types of equal?
+Did I forget there are 4 types of equal?
 ### Slightly Equal/`=`
-The slightly equal does not matter if an number has the same decimal places or not.
+The slightly equal does not matter if a number has the same decimal places or not.
 ```js
 3.141 = 3 // true
 ```
 ### Equal/`==`
-This checks if an number has atleast 2 decimal numbers equal.
+This checks if a number has at least 2 decimal numbers equal.
 ```js
 3.141 == 3.142 // true
 ```
@@ -297,14 +297,15 @@ This is what the Geometry Dash API returns when searching a level:
 |---------|-------------|
 |name     |string       |
 |id       |number/bigint|
-You can also play an level if you have the Geometry Dash API Extension for Geometry Dash.
+
+You can also play a level if you have the Geometry Dash API Extension for Geometry Dash.
 ```js
 gdapi.play(level1) // Opens Geometry Dash with the ID of the level copied.
 ```
 ## Variables, Lets, and Consts*
 There are various ways that you can define variables.
 ### Temporary/Constant Constant Variables `const const`/`const ... as const`
-To create an temporary variable, you could do
+To create a temporary variable, you could do
 ```ts
 const const temp1 = 123
 const temp2 = 456 as const
@@ -312,7 +313,7 @@ const temp2 = 456 as const
 temp1 = 789 // Error: Variable "temp1" is a temporary variable
 ```
 ### Variable Constant Variables `let const`/`var const`/`let ... as const`/`var ... as const`
-Variable Constant Variables are variables that can get edited, but it's children can't
+Variable Constant Variables are variables that can be edited, but their children can't
 ```ts
 let const vcon1 = 123
 let vcon2 = [4, 5, 6] as const
@@ -323,7 +324,7 @@ vcon2 = [7, 8, 9] // Does not need as const
 vcon2[1] = 10 // Error: Variable "vcon2" is a variable constant variable
 ```
 ### Constant Variable Variables `const let`/`const var`/`const ... as let`/`const .. as var`
-Constant Variable Variables are the contrary of Variable Constant Variables, the children can 
+Constant Variable Variables are the contrary of Variable Constant Variables. The children can 
 get edited, but their parent can't
 ```ts
 const let cvar1 = 123
@@ -333,4 +334,9 @@ const cvar2 = [4, 5, 6] as var
 cvar2[1] = 5.5
 
 cvar2 = [7, 8, 9] // Error: Variable "cvar2" is a constant variable variable
+```
+### Permanent/Constant Constant Constant Variables `const const const`/`const const ... as const`/`const ... as const const`/`const ... as const as const`
+These variables affect both your code and the global code, it permanently leave a mark on everyone's code. Please use this for experimental purposes.
+```ts
+const const const pi = 3.14159
 ```
