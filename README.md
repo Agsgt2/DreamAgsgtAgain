@@ -193,6 +193,14 @@ WARNING: You can also add read-only values and use them for experimental purpose
 ```js
 database.add("pi", 3.14159, true)
 ```
+### The recently new!
+You can now add or read functions to databases!
+```js
+database.add("add", (a, b)=>a+b)
+const add = database.get("add")
+
+add(2, 5) // 7
+```
 ## Angel3D
 You can create a new 3D game instance using
 ```js
@@ -336,7 +344,7 @@ cvar2[1] = 5.5
 cvar2 = [7, 8, 9] // Error: Variable "cvar2" is a constant variable variable
 ```
 ### Permanent/Constant Constant Constant Variables `const const const`/`const const ... as const`/`const ... as const const`/`const ... as const as const`
-These variables affect both your code and the global code, it permanently leave a mark on everyone's code. Please use this for experimental purposes.
+These variables affect both your code and the global code, it permanently leaves a mark on everyone's code. Please use this for experimental purposes.
 ```ts
 const const const pi = 3.14159
 ```
