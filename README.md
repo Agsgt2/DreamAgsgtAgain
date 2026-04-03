@@ -292,15 +292,15 @@ You can search levels by name and ID
 let level1 = gdapi.search("Trigger Abuse")
 let level2 = gdapi.search(136353284n /* For levels after 1.5, we recommend using bigints.*/)
 ```
-This is what the Geometry Dash API returns when searching a level:
-|Data Name|Data Type    |
-|---------|-------------|
-|name     |string       |
+This is what the Geometry Dash API returns when searching a level: <br>
+|Data Name|Data Type|
+|---------|---------|
+|name     |string   |
 |id       |number/bigint|
 
 You can also play a level if you have the Geometry Dash API Extension for Geometry Dash.
 ```js
-gdapi.play(level1) // Opens Geometry Dash with the ID of the level copied.
+gdapi.play(level1.id) // Opens Geometry Dash with the ID of the level copied.
 ```
 ## Variables, Lets, and Consts*
 There are various ways that you can define variables.
