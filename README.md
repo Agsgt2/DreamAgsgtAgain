@@ -348,7 +348,7 @@ These variables affect both your code and the global code, it permanently leaves
 ```ts
 const const const pi = 3.14159
 ```
-# Owningmentship
+## Owningmentship <!-- TODO: fix this crap cuz why tf not -->
 ik this name is balls, but if your clone of this does not have "DreamAgsgtAgain", then it is owned by the DreamAgsgtAgain Corp.
 - `MyDreamAgsgtAgain` is NOT owned by the DreamAgsgtAgain Corp.
 - `RustPlus` is owned by the DreamAgsgtAgain Corp.
